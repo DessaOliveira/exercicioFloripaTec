@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    let students = [
+      {
+        name: "Jorge",
+        height: 1.89,
+        age: 23,
+        sex: "masculino",
+        classroom: 1,
+        math: 8,
+      },
+      {
+        name: "Laura",
+        height: 1.57,
+        age: 20,
+        sex: "feminino",
+        classroom: 1,
+        math: 7,
+      },
+      {
+        name: "Felipe",
+        height: 1.87,
+        age: 25,
+        sex: "masculino",
+        classroom: 1,
+        math: 9,
+      },
+      {
+        name: "Sara",
+        height: 1.68,
+        age: 24,
+        sex: "feminino",
+        classroom: 1,
+        math: 6,
+      },
+      {
+        name: "Juan",
+        height: 1.79,
+        age: 22,
+        sex: "masculino",
+        classroom: 1,
+        math: 5,
+      },
+    ];
+
+let media = (students[0].math + students[1].math + students[2].math + students[3].math + students[4].math) / 5
+
+    function professor (aluno,nota) {
+      if (nota >= 7){
+        return `${aluno} passou com nota ${nota}!`
+      } else {
+        return `${aluno} reprovou com nota ${nota}!`
+      }
+    };
+  
+    console.log(professor(students[1].name, students[1].math))
+
+
+let aprovado = ""
+aprovado = window.prompt("Você foi aprovado?: escreva sim ou nao")
+
+if (aprovado == "sim"){
+    alert('Boas Ferias!!');
+}
+else{ (aprovado == "nao")
+    alert("Continue estudando, você vai conseguir!");
+};
+
+  </script>
+</html>
